@@ -11,7 +11,7 @@ Output_Basic.py：利用cv2/PIL/matplotlib的库写的截图显示用的库（�
 + 请安装好ADB、python并全部配置好环境变量
 + 打开手机开发者选项（网上百度）
 + 开启USB调试选项，同时在电脑上安装相应品牌的“手机助手”以获取ADB驱动（本质上，安装之后在ADB中能连上手机了，就可以卸载软件了）
-+ 安装所有需要的库文件“pip install ”+库文件名（opencv-python,matplotlib，pillow）
++ 安装所有需要的库文件“pip install ”+库文件名（opencv-python,matplotlib,pillow）
 + 打开年夜饭界面，运行“ADB_Main_synthesis.py”，开始享受吧！
 
 
