@@ -3,9 +3,9 @@
 本ADB助手采用了简易的策略，主要是屏幕最左侧贴壁放一个，最右侧贴壁放一个这样可以均衡并且利用碰撞原理分离大小不同的“饭”
 
 文件内容及目录：
-ADB_Main.py：一个调用内部写的库的外接入口
-ADBbasic.py：本人封装的ADB主库，具体函数请看内部（不多，就几十行）
-Outputbasic.py：利用cv2/PIL/matplotlib的库写的截图显示用的库（函数都封装好了，ADB_Main.py暂时没用上，但是默认ADBbasic.py调用上了）
+ADB_Main_synthesis.py：一个调用内部写的库的外接入口，团圆饭要用的“主函数”，直接运行即可
+ADB_Basic.py：本人封装的ADB主库，具体函数请看内部（不多，就几十行）
+Output_Basic.py：利用cv2/PIL/matplotlib的库写的截图显示用的库（函数都封装好了，ADB_Basic.py调用上了）
 
 使用方法：
 1.请安装好ADB、python并全部配置好环境变量
@@ -13,7 +13,7 @@ Outputbasic.py：利用cv2/PIL/matplotlib的库写的截图显示用的库（函
 3.开启USB调试选项，同时在电脑上安装相应品牌的“手机助手”以获取ADB驱动（本质上，安装之后在ADB中能连上手机了，就可以卸载软件了）
 4.获取屏幕分辨率及尺寸信息并修改“ADB_Main.py”中的参数
 5.安装所有需要的库文件“pip install ”+库文件名
-6.打开年夜饭界面，运行“ADB_Main.py”，开始享受吧！
+6.打开年夜饭界面，运行“ADB_Main_synthesis.py”，开始享受吧！
 
 
 免责声明：本程序是仅供学习与交流使用，仅模拟人的机械性重复操作，未修改腾讯软件相应代码，请在下载之后24小时内务必删除。
