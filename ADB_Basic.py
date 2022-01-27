@@ -57,7 +57,8 @@ def ADB_screen_show(In_phonepath: str = "/sdcard/ADB01.png", In_pcpath: str = "D
     return tmp
 
 
-def ADB_screen_monitor(In_phonepath: str = "/sdcard/ADB01.png", In_pcpath: str = "D:\\ADB01.png", In_delayms: int = 1000):  # 监视屏幕
+# 监视屏幕，因长时间显示图片，所以用了threading+opencv显示，但是还是速度一般。。希望有大佬指教
+def ADB_screen_monitor(In_phonepath: str = "/sdcard/ADB01.png", In_pcpath: str = "D:\\ADB01.png", In_delayms: int = 1000):
     tmp_cv2 = threading.Thread(
         target=Img_cv2_monitor, args=(In_pcpath, In_delayms))
     tmp_cv2.start()
@@ -75,7 +76,8 @@ def ADB_screen_monitor(In_phonepath: str = "/sdcard/ADB01.png", In_pcpath: str =
 
 if __name__ == '__main__':
     # 连接设备的话直接在cmd里面敲吧。。懒得直接写了（一般自动连上手机）
-    print(ADB_screen_monitor("/sdcard/ADB01.png","D:\\LENOVO\\Desktop\\tmp\ADB\\ADB01.png", 500))
+    print(ADB_screen_monitor("/sdcard/ADB01.png",
+                             "D:\\LENOVO\\Desktop\\tmp\ADB\\ADB01.png", 500))
 
     # for i in range(100):
     #     ADB_tap(40+randint(-30,10),1200+randint(-200,200))

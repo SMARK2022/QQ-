@@ -1,13 +1,13 @@
-import Tkinter
+import tkinter
 
-class App(Tkinter.Tk):
+class App(tkinter.Tk):
 
 
     def __init__(self):
 
-        Tkinter.Tk.__init__(self)
+        tkinter.Tk.__init__(self)
 
-        self.label = Tkinter.Label(text="your image here", compound="top")
+        self.label = tkinter.Label(text="your image here", compound="top")
 
         self.label.pack(side="top", padx=8, pady=8)
 
@@ -55,7 +55,7 @@ class App(Tkinter.Tk):
 
         '''
 
-        image = Tkinter.PhotoImage(data=data)
+        image = tkinter.PhotoImage(data=data)
 
         return image
 

@@ -20,7 +20,8 @@ while True:
             ADB_tap(0+randint(4, 25), int(In_Y/2) +
                     randint(int(-In_Y/4), int(In_Y/4)))  # 左边界处按一下
             time.sleep(0.1+0.01*randint(-5, 10))  # 延时
-            ADB_tap(In_X+randint(-25, 4), int(In_Y/2) + randint(int(-In_Y/4), int(In_Y/4)))  # 右边界处按一下
+            ADB_tap(In_X+randint(-25, 4), int(In_Y/2) +
+                    randint(int(-In_Y/4), int(In_Y/4)))  # 右边界处按一下
             time.sleep(0.1+0.01*randint(-5, 10))
     except KeyboardInterrupt:
         print("【系统】操作循环已中断...")
