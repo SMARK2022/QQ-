@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "nuitka",
+            "type": "shell",
+            "command": "nuitka",
+            "args": [
+                //"--recurse-all",
+                "--mingw64",
+                "--show-progress",
+                "--standalone",
+                "--output-dir=${input:componentName}",
+                "${file}"
+            ]
+        }
+    ],
+    "inputs": [
+        {
+            "type": "promptString",
+            "id": "componentName",
+            "description": "Name your component.",
+            "default": "Output"
+        }
+    ]
+}
