@@ -6,7 +6,7 @@
 + **ADB_Main.py**: 一个调用内部本人写的库(Apply, Basic)的外接入口，（输入操作已写好）直接运行即可
 + **ADB_Apply.py**: 本人根据ADB主库外加的相关操作接口，可以实现相关的腾讯春节应用操作
 + **ADB_Basic.py**: 本人自己封装的ADB主库，具体函数请看内部（不多，就几十行）
-Output_Basic.py：利用cv2/PIL/matplotlib的库写的截图显示用的库（函数都封装好了，ADB_Basic.py调用上了）
++ **Output_Basic.py**: 利用cv2/PIL/matplotlib的库写的截图显示用的库（函数都封装好了，ADB_Basic.py调用上了）
 
 ## 配置及运行方法：
 + 请安装好ADB、python并全部配置好环境变量
